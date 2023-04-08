@@ -1,0 +1,21 @@
+using System; 
+
+public class Program
+{
+    public void Main()
+    {
+        int i = 0;
+        while(i < 5)
+        {
+            Console.WriteLine(i);
+            i++;
+        }
+
+        int i = 0;
+        do
+        {
+            Console.WriteLine(i);
+        } while (i < 5);
+    }
+
+}
