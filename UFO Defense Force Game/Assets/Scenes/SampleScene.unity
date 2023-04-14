@@ -339,7 +339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941459308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.865}
+  m_LocalPosition: {x: 0, y: 0, z: 1.075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -642,4 +642,4 @@ MonoBehaviour:
   speed: 25
   xRange: 30
   blaster: {fileID: 941459309}
-  lazerBolt: {fileID: 87908812217899105, guid: 3ba7eb9dac5746e4f93fc1aad7d55081, type: 3}
+  lazerBolt: {fileID: 8947142787743155681, guid: af4f03a4d329ae942a37aee40788ac51, type: 3}

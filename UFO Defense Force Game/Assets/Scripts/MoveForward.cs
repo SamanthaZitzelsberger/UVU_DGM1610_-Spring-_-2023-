@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed = 50.0f;
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Move GameOject forward
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);    
     }
 }
