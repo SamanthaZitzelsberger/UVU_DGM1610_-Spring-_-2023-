@@ -8,9 +8,13 @@ public class EnemySpawnManager : MonoBehaviour
     private float spawnRangeX = 20f;
     private float spawnPosZ = 20f;
 
+    private float startDelay = 2f;
+    private float spawnInterval = 1.5f;
+
+
     void Start()
     {
-        InvokeRepeation("SpawnRandomUFO", startDelay, spawnInterval);
+        InvokeRepeating("SpawnRandomUFO", startDelay, spawnInterval);
     }
 
     void Update()
