@@ -13,19 +13,11 @@ public class KeyboardEventTest : MonoBehaviour
         root.Add(new TextField());
         root.Q<TextField>().Focus();
         root.RegisterCallback<KeyDownEvent>(OnKeyDown, TrickleDown.TrickleDown);
-        root.RegisterCallback<KeyUpEvent>(OnKeyUp, TrickleDown.TrickleDown);
     }
     void OnKeyDown(KeyDownEvent ev)
     {
         Debug.Log("KeyDown:" + ev.keyCode);
         Debug.Log("KeyDown:" + ev.character);
         Debug.Log("KeyDown:" + ev.modifiers);
-    }
-
-    void OnKeyUp(KeyUpEvent ev)
-    {
-        Debug.Log("KeyUp:" + ev.keyCode);
-        Debug.Log("KeyUp:" + ev.character);
-        Debug.Log("KeyUp:" + ev.modifiers);
     }
 }
