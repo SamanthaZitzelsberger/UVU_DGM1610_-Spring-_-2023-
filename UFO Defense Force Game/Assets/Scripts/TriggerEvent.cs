@@ -8,6 +8,5 @@ public class TriggerEvent : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         triggerEnterEvent.Invoke();
-        Destroy(this);
     }
 }
