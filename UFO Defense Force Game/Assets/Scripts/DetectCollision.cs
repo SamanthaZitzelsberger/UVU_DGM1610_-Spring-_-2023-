@@ -14,8 +14,8 @@ public class DetectCollision : MonoBehaviour
     public int scoreToGive;
     void OnTriggerEnter(Collider other)
     {
-        scoreManager.IncreaseScore(scoreToGive);
         Destroy(gameObject);
+        scoreManager.IncreaseScore(scoreToGive);
         Destroy(other.gameObject);
     }
 }
