@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 670447809}
   - component: {fileID: 670447813}
   - component: {fileID: 670447814}
+  - component: {fileID: 670447815}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -391,6 +392,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bceea523c821f4a87f20409afbe3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &670447815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670447807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdcaa91167f0c94493eb1635399c923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraObj: {fileID: 0}
+  draggable: 0
+  position: {x: 0, y: 0, z: 0}
 --- !u!1 &1071161104
 GameObject:
   m_ObjectHideFlags: 0
