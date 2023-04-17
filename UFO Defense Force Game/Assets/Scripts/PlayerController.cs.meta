@@ -3,7 +3,10 @@ guid: 112a21146ec5cb8418edd78c138a5457
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - blaster: {instanceID: 0}
+  - lazerBolt: {fileID: 5724901322465798766, guid: f7d90f39d7d5c184a91aedbe22d8403b, type: 3}
+  - gameManager: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

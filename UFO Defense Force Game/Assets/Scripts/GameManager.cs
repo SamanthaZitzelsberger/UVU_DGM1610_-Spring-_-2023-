@@ -7,11 +7,6 @@ public class GameManager : MonoBehaviour
     public bool isGameOver;
     private GameObject gameOverText;
 
-    void Awake()
-    {
-        Time.timeScale = 1;
-        isGameOver = false;
-    }
     void Start()
     {
         gameOverText = GameObject.Find("GameOverText");
@@ -19,17 +14,9 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(isGameOver)
-        {
-            EndGame();
-        }
+        if (Time.timeScale == 0)
+            gameOverText.gameObject.SetActive(true);
         else
             gameOverText.gameObject.SetActive(false);
-    }
-
-    public void EndGame()
-    {
-        gameOverText.gameObject.SetActive(true);
-        Time.timeScale = 0;
     }
 }
