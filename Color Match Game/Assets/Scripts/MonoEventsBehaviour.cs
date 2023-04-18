@@ -9,14 +9,14 @@ public class MonoEventsBehaviour : MonoBehaviour
     {
         awakeEvent.Invoke();
     }
-    void Start()
+
+    private void Start()
     {
-        
+        startEvent.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        disableEvent.Invoke();
     }
 }
