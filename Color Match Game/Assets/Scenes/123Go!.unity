@@ -426,6 +426,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e711165f001e89488d7a5784982abca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: bc541e25d4d79c541b1a7a76dca1d046, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   repeatEvent:
     m_PersistentCalls:
       m_Calls:
@@ -441,7 +456,22 @@ MonoBehaviour:
           m_StringArgument: On
           m_BoolArgument: 0
         m_CallState: 2
-  counterNum: 3
+      - m_Target: {fileID: 1953867430}
+        m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d142ad70ffe123949a3d9ac6c6604b17, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  counterNum: {fileID: 11400000, guid: d142ad70ffe123949a3d9ac6c6604b17, type: 2}
   seconds: 1
 --- !u!4 &1305435836
 Transform:
@@ -469,6 +499,7 @@ GameObject:
   - component: {fileID: 1953867427}
   - component: {fileID: 1953867429}
   - component: {fileID: 1953867428}
+  - component: {fileID: 1953867430}
   m_Layer: 5
   m_Name: GoLable
   m_TagString: Untagged
@@ -538,3 +569,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953867426}
   m_CullTransparentMesh: 1
+--- !u!114 &1953867430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953867426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2483c6e63bd97a74fa92183be4dfb6e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: {fileID: 0}
+  dataObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
