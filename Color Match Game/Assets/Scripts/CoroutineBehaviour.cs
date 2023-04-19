@@ -19,7 +19,10 @@ public class CoroutineBehaviour : MonoBehaviour
 
         while (counterNum > 0)
         {
+            Debug.Log(counterNum);
             yield return wfsObj;
+            repeatEvent.Invoke();
+            counterNum--;
         }
     }
 }
