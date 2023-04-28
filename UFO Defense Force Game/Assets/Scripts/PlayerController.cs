@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
         {
             // Create lazerbolt at the blaster transform position maintaining the objects rotation
             Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
         }
     }
 
