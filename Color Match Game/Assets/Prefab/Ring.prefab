@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6917846335518097914}
   - component: {fileID: 9181404828759824367}
   - component: {fileID: 2087795304655801292}
-  - component: {fileID: -7628877273151854621}
+  - component: {fileID: -8406015011623804369}
   m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
@@ -177,7 +177,7 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-7628877273151854621
+--- !u!114 &-8406015011623804369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec15c43ad5960c7438fb006561728a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: 568069f6202ef2d4484a5f492f506fbc, type: 2}
+  idObj: {fileID: 0}
   startEvent:
     m_PersistentCalls:
       m_Calls: []
