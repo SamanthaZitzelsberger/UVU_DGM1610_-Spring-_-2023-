@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,5 +26,13 @@ public class TextLabelBehaviour : MonoBehaviour
     public void UpdateLabel(IntData obj)
     {
         label.text = obj.value.ToString(CultureInfo.InvariantCulture);
+    }
+    public void CompareLabel (IntData obj)
+    {
+        int tmp = Convert.ToInt16(label.text);
+        if(tmp < obj.value)
+        {
+            label.text = obj.value.ToString(CultureInfo.InvariantCulture);
+        }
     }
 }

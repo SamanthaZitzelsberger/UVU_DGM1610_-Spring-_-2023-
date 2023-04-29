@@ -10,10 +10,9 @@ public class TextLabelBehaviourHighScore : TextLabelBehaviour
 
     public override void UpdateLabel(FloatData obj)
     {
-        FloatData tmp;
+        float tmp = Convert.ToSingle(label.text);
         if(tmp < obj.value)
         {
-            float tmp = Convert.ToSingle(label.text);
             label.text = obj.value.ToString(CultureInfo.InvariantCulture);
         }
         //dataObj.value.ToString(CultureInfo.InvariantCulture);
