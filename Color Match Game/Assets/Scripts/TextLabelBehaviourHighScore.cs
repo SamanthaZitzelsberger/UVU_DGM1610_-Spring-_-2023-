@@ -8,9 +8,9 @@ using UnityEngine.Events;
 public class TextLabelBehaviourHighScore : TextLabelBehaviour
 {
 
-    public override void UpdateLabel(FloatData obj)
+    public override void UpdateLabel(IntData obj)
     {
-        float tmp = Convert.ToSingle(label.text);
+        int tmp = Convert.ToInt16(label.text);
         if(tmp < obj.value)
         {
             label.text = obj.value.ToString(CultureInfo.InvariantCulture);
