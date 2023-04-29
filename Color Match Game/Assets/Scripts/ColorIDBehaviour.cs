@@ -9,7 +9,7 @@ public class ColorIDBehaviour : IDContainerBehaviour
 
     private void Awake()
     {
-        colorIDDataListObj.SetCurrentColorRandomly;
+        colorIDDataListObj.SetCurrentColorRandomly();
         idObj = colorIDDataListObj.currentColor;
     }
 }
