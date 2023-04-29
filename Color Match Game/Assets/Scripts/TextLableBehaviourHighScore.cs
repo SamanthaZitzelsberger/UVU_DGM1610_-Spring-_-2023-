@@ -6,16 +6,13 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Text))]
 public class TextLabelBehaviourHighScore : TextLabelBehaviour
 {
-    public Text label;
-    public FloatData dataObj;
 
     public void UpdateLabel(FloatData obj)
     {
-        if
+        if(FloatData(label.text) < obj.value)
         {
-
+            label.text = obj.value.ToString(CultureInfo.InvariantCulture);
         }
-        label.text = obj.value.ToString(CultureInfo.InvariantCulture);
         //dataObj.value.ToString(CultureInfo.InvariantCulture);
     }
 }
