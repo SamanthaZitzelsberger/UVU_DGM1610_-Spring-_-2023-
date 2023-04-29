@@ -26,7 +26,7 @@ public class TextLabelBehaviour : MonoBehaviour
 
     public void UpdateLabel(IntData obj)
     {
-        Debug.Log("This is upadte label int" + obj.value);
+        Debug.Log("This is upadte label int" + obj.value + gameObject.name);
         label.text = obj.value.ToString(CultureInfo.InvariantCulture);
     }
     public void CompareLabel (IntData obj)
@@ -40,5 +40,10 @@ public class TextLabelBehaviour : MonoBehaviour
         {
             label.text = obj.value.ToString(CultureInfo.InvariantCulture);
         }
+    }
+
+    public void Reset()
+    {
+        label.text = "0";
     }
 }

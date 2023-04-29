@@ -28,11 +28,13 @@ public class IntData : ScriptableObject
 
     public void SetValue(IntData obj)
     {
+        Debug.Log("int datd set value" + obj.value);
         value = obj.value;
     }
     
     public void UpdateValue(int num)
     {
+        Debug.Log("int data update vlaue plus num" + num);
         value += num;
     }
 }
