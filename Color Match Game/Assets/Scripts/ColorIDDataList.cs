@@ -13,8 +13,9 @@ public class ColorIDDataList : ScriptableObject
 
     public void SetCurrentColorRandomly()
     {
-        //num = colorIDList.Count-1;
-        currentColor = colorIDList[Random.Range(0, colorIDList.Count)];
+        num = Random.Range(0, colorIDList.Count);
+        currentColor = colorIDList[num];
+        Debug.Log(num);
         //Random.Range(0,ufoPrefabs.Length);
     }
 }
