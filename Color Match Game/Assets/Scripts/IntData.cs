@@ -14,7 +14,7 @@ public class IntData : ScriptableObject
 
     public void CompareValue(IntData obj)
     {
-        Debug.Log("This is int data Compare" + obj.value);
+        Debug.Log("This is int data Compare" + obj.value + " " +value);
         if (value >= obj.value)
         {
 
@@ -23,7 +23,7 @@ public class IntData : ScriptableObject
         {
             value = obj.value;
         }
-        Debug.Log(value);
+
     }
 
     public void SetValue(IntData obj)
