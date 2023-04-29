@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,10 +8,12 @@ using UnityEngine.Events;
 public class TextLabelBehaviourHighScore : TextLabelBehaviour
 {
 
-    public void UpdateLabel(FloatData obj)
+    public override void UpdateLabel(FloatData obj)
     {
-        if(FloatData(label.text) < obj.value)
+        FloatData tmp;
+        if(tmp < obj.value)
         {
+            float tmp = Convert.ToSingle(label.text);
             label.text = obj.value.ToString(CultureInfo.InvariantCulture);
         }
         //dataObj.value.ToString(CultureInfo.InvariantCulture);

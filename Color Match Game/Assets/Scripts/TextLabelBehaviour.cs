@@ -16,7 +16,7 @@ public class TextLabelBehaviour : MonoBehaviour
         startEvent.Invoke();
     }
 
-    public void UpdateLabel(FloatData obj)
+    public virtual void UpdateLabel(FloatData obj)
     {
         label.text = obj.value.ToString(CultureInfo.InvariantCulture);
         //dataObj.value.ToString(CultureInfo.InvariantCulture);
