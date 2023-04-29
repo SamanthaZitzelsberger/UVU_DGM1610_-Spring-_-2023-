@@ -17,20 +17,21 @@ public class TextLabelBehaviour : MonoBehaviour
         startEvent.Invoke();
     }
 
-    public virtual void UpdateLabel(FloatData obj)
+    public void UpdateLabel(FloatData obj)
     {
         Debug.Log("This is update label float");
         label.text = obj.value.ToString(CultureInfo.InvariantCulture);
         //dataObj.value.ToString(CultureInfo.InvariantCulture);
     }
 
-    public virtual void UpdateLabel(IntData obj)
+    public void UpdateLabel(IntData obj)
     {
-        Debug.Log("This is upadte label int");
+        Debug.Log("This is upadte label int" + obj.value);
         label.text = obj.value.ToString(CultureInfo.InvariantCulture);
     }
-    public virtual void CompareLabel (IntData obj)
+    public void CompareLabel (IntData obj)
     {
+        Debug.Log("this is compare label");
         int tmp = Convert.ToInt16(label.text);
         Debug.Log(label.text);
         Debug.Log(tmp);
