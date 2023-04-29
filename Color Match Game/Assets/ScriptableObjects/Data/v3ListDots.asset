@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c106e1fb1314d864d951efc3c14c7b61, type: 3}
   m_Name: v3ListDots
   m_EditorClassIdentifier: 
-  vector3DList: []
+  vector3DList:
+  - {fileID: 11400000, guid: 7a4cd47751faf064097c6265f54527e0, type: 2}
+  - {fileID: 11400000, guid: 93a6e369e8c5fc04a8a91605f2b85899, type: 2}
+  - {fileID: 11400000, guid: 554761dc1b76a0e4f8ea56719b61a2bd, type: 2}
+  - {fileID: 11400000, guid: 24d4361232e874a4082613dff67148b6, type: 2}

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33447585af7106440b2fccec9a4c037d, type: 3}
-  m_Name: v3dota 3
+  m_Name: v3dotD
   m_EditorClassIdentifier: 
-  value: {x: 0, y: 0, z: 0}
+  value: {x: 7.34, y: -3.98, z: 0}

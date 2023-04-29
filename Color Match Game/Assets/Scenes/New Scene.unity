@@ -745,6 +745,10 @@ PrefabInstance:
       value: Instancer, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 41e4d27f284f33447a8363870be0f096, type: 2}
+    - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
       propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
