@@ -527,7 +527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &857976489
 Animator:
   serializedVersion: 5
@@ -656,19 +656,19 @@ PrefabInstance:
     - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
       propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1192205140}
+      objectReference: {fileID: 1490986755}
     - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
       propertyPath: startCountEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
       propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartCounting
+      value: StartRepeatUntilFalse
       objectReference: {fileID: 0}
     - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
       propertyPath: startCountEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1192205140}
+      objectReference: {fileID: 0}
     - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
       propertyPath: startCountEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -688,6 +688,10 @@ PrefabInstance:
     - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
       propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
+      propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CreateInstanceFromListRandomly
       objectReference: {fileID: 0}
     - target: {fileID: 3303961084356822176, guid: 55f992359f8b9b945b2057d96fc7fa3d, type: 3}
       propertyPath: repeatUntilFalseEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -886,7 +890,19 @@ MonoBehaviour:
         m_CallState: 2
   repeatUntilFalseEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1490986755}
+        m_TargetAssemblyTypeName: CoroutineBehaviour, Assembly-CSharp
+        m_MethodName: StartRepeatUntilFalse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   canRun: 0
   counterNum: {fileID: 11400000, guid: d142ad70ffe123949a3d9ac6c6604b17, type: 2}
   seconds: 1

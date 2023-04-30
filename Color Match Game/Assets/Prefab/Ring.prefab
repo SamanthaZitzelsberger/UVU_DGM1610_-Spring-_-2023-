@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9181404828759824367}
   - component: {fileID: 2087795304655801292}
   - component: {fileID: -8406015011623804369}
+  - component: {fileID: 5336069631766716731}
   m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
@@ -191,6 +192,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idObj: {fileID: 0}
   startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: f0fe731b920fc39469f6bed4047e6bd0, type: 2}
+--- !u!114 &5336069631766716731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6660398976026370976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f32275dfc0f3048ab018148652f1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: f0fe731b920fc39469f6bed4047e6bd0, type: 2}
